@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <div id="lock-screen" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffe6f2; display: flex; justify-content: center; align-items: center; z-index: 9999;">
     <div style="text-align: center; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
@@ -10,6 +11,8 @@
     </div>
 </div>
 
+
+
   
 <html lang="fr">
   <head>
@@ -17,17 +20,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Souvenirs de Mehdi & Anaïs</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
-    <div id="hearts-container"></div>
+
+      <div id="hearts-container"></div>
+      <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        Swal.fire({
+          title: "Un message pour toi 💖",
+          text: "Ton message ici",
+          imageUrl: "tulipes.gif", // Remplace par le bon chemin de l'image
+          imageWidth: 200,
+          imageHeight: 200,
+          confirmButtonText: "Continuer",
+          allowOutsideClick: true,
+        });
+      });
+    </script>
+    
     <header>
       <h1>Joyeuse Saint-Valentin 💖</h1>
     </header>
     <div class="gallery">
       <div class="gallery">
         <div class="photo-frame" onclick="openFullscreen('example1.jpg', 'Notre premier match ensemble 💕')">
-            <img src="example1.jpg" alt="Souvenir 1" />
-            <p>Notre premier match ensemble 💕</p>
+        <img src="example1.jpg" alt="Souvenir 1" />
+        <p>Notre premier match ensemble 💕</p>
         </div>
         <div class="photo-frame" onclick="openFullscreen('example2.jpg', 'Petit pique-nique sur la prom\' 🌞')">
             <img src="example2.jpg" alt="Souvenir 2" />
@@ -73,9 +92,9 @@
             <img src="example12.jpg" alt="Souvenir 12" />
             <p>Notre première poutine 🌅</p>
         </div>
-        <div class="photo-frame" onclick="openFullscreen('example13.jpg', 'Notre premier resto en Italie pour l\'anniversaire 🌸🍴')">
+        <div class="photo-frame" onclick="openFullscreen('example13.jpg', 'Notre premier resto en Italie pour l\'anniversaire d\'Avo 🌸🍴')">
             <img src="example13.jpg" alt="Souvenir 13" />
-            <p>Notre premier resto en Italie pour l'anniversaire 🌸🍴</p>
+            <p>Notre premier resto en Italie pour l'anniversaire d'Avo 🌸🍴</p>
         </div>
         <div class="photo-frame" onclick="openFullscreen('example14.jpg', 'Nos baignades à la plage de Villefranche 🌊🥰')">
             <img src="example14.jpg" alt="Souvenir 14" />
@@ -85,6 +104,55 @@
             <img src="example15.jpg" alt="Souvenir 15" />
             <p>Nos sorties sur la corniche 🌄</p>
         </div>
+        <div class="photo-frame" onclick="openFullscreen('example16.jpg', 'L’anniversaire de ma star qui a fêté ses 18 ans 🎂✨')">
+    <img src="example16.jpg" alt="Souvenir 16" />
+    <p>L’anniversaire de ma star qui a fêté ses 18 ans 🎂✨</p>
+</div>
+<div class="photo-frame" onclick="openFullscreen('example17.jpg', 'Ma femme avec ma fille ❤️👩‍👧')">
+    <img src="example17.jpg" alt="Souvenir 17" />
+    <p>Ma femme avec ma fille ❤️👩‍👧</p>
+</div>
+<div class="photo-frame" onclick="openFullscreen('example18.jpg', 'T’aimes bien la pose ? 😎')">
+    <img src="example18.jpg" alt="Souvenir 18" />
+    <p>T’aimes bien la pose ? 😎</p>
+</div>
+<div class="photo-frame" onclick="openFullscreen('example19.jpg', 'Nani qui a validé son baptême de plongée 🌊🤿')">
+    <img src="example19.jpg" alt="Souvenir 19" />
+    <p>Nani qui a validé son baptême de plongée 🌊🤿</p>
+</div>
+<div class="photo-frame" onclick="openFullscreen('example20.jpg', 'Eyes contact 👀✨')">
+    <img src="example20.jpg" alt="Souvenir 20" />
+    <p>Eyes contact 👀✨</p>
+</div>
+<div class="photo-frame" onclick="openFullscreen('example21.jpg', 'Vamos Portugal !!! 🇵🇹⚽')">
+    <img src="example21.jpg" alt="Souvenir 21" />
+    <p>Vamos Portugal !!! 🇵🇹⚽</p>
+</div>
+<div class="photo-frame" onclick="openFullscreen('example22.jpg', 'Mamma mia la Cucina Italiana 🍝🇮🇹')">
+    <img src="example22.jpg" alt="Souvenir 22" />
+    <p>Mamma mia la Cucina Italiana 🍝🇮🇹</p>
+</div>
+<div class="photo-frame" onclick="openFullscreen('example23.jpg', 'Le musée de Monaco 🏛️🇲🇨')">
+    <img src="example23.jpg" alt="Souvenir 23" />
+    <p>Le musée de Monaco 🏛️🇲🇨</p>
+</div>
+<div class="photo-frame" onclick="openFullscreen('example24.jpg', 'Notre premier marché de Noël 🎄☃️')">
+    <img src="example24.jpg" alt="Souvenir 24" />
+    <p>Notre premier marché de Noël 🎄☃️</p>
+</div>
+<div class="photo-frame" onclick="openFullscreen('example25.jpg', 'Couché de soleil sur la Prom 🌅')">
+    <img src="example25.jpg" alt="Souvenir 25" />
+    <p>Couché de soleil sur la Prom 🌅</p>
+</div>
+<div class="photo-frame" onclick="openFullscreen('example26.jpg', 'Burrito mexicano 🌯🇲🇽')">
+    <img src="example26.jpg" alt="Souvenir 26" />
+    <p>Burrito mexicano 🌯🇲🇽</p>
+</div>
+<div class="photo-frame" onclick="openFullscreen('example27.jpg', 'Le premier resto tunisien “Trop piquant” ! 🌶️🇹🇳')">
+    <img src="example27.jpg" alt="Souvenir 27" />
+    <p>Le premier resto tunisien “Trop piquant” ! 🌶️🇹🇳</p>
+</div>
+
     </div>
     <footer>
         <p>Avec amour, Mehdi & Anaïs ❤️</p>
@@ -93,22 +161,35 @@
     <script>
         // Tableau contenant les descriptions des photos
         const photoDescriptions = [
-          "Notre premier match ensemble 💕",
-          "Petit pique-nique sur la prom' 🌞",
-          "La classe ✨",
-          "Petit train mais toujours beaux 🚆",
-          "Jsp sah 🤷‍♂️",
-          "Toujours beaux et drôles 😂",
-          "Les beaux sourires sous les étoiles 🌌",
-          "Une soirée avec Vaiana 🌺",
-          "La vue de chez Nonna 🌊",
-          "Le brunch amazing de Rosewood 🌹🍽️",
-          "Un cinéma magnifique ✨",
-          "Notre première poutine 🌅",
-          "Notre premier resto en Italie pour l'anniversaire 🌸🍴",
-          "Nos baignades à la plage de Villefranche 🌊🥰",
-          "Nos sorties sur la corniche 🌄",
-        ];
+    "Notre premier match ensemble 💕",
+    "Petit pique-nique sur la prom' 🌞",
+    "La classe ✨",
+    "Petit train mais toujours beaux 🚆",
+    "Jsp sah 🤷‍♂️",
+    "Toujours beaux et drôles 😂",
+    "Les beaux sourires sous les étoiles 🌌",
+    "Une soirée avec Vaiana 🌺",
+    "La vue de chez Nonna 🌊",
+    "Le brunch amazing de Rosewood 🌹🍽️",
+    "Un cinéma magnifique ✨",
+    "Notre première poutine 🌅",
+    "Notre premier resto en Italie pour l'anniversaire 🌸🍴",
+    "Nos baignades à la plage de Villefranche 🌊🥰",
+    "Nos sorties sur la corniche 🌄",
+    "L’anniversaire de ma star qui a fêté ses 18 ans 🎂✨",
+    "Ma femme avec ma fille ❤️👩‍👧",
+    "T’aimes bien la pose ? 😎",
+    "Nani qui a validé son baptême de plongée 🌊🤿",
+    "Eyes contact 👀✨",
+    "Vamos Portugal !!! 🇵🇹⚽",
+    "Mamma mia la Cucina Italiana 🍝🇮🇹",
+    "Le musée de Monaco 🏛️🇲🇨",
+    "Notre premier marché de Noël 🎄☃️",
+    "Couché de soleil sur la Prom 🌅",
+    "Burrito mexicano 🌯🇲🇽",
+    "Le premier resto tunisien “Trop piquant” ! 🌶️🇹🇳"
+];
+
       
         let currentPhoto = 1;
       
@@ -146,24 +227,27 @@
       </script>
       
     <script>
-      function createHeart() {
-        const heart = document.createElement("div");
-        heart.classList.add("heart");
-        heart.innerHTML = "❤️";
-        heart.style.left = Math.random() * 100 + "vw";
-        heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+  function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = Math.random() * 20 + 20 + "px"; /* Taille aléatoire */
+    heart.style.animationDuration = Math.random() * 3 + 5 + "s"; /* Durée aléatoire */
 
-        // Ajoute les cœurs dans le conteneur
-        document.getElementById("hearts-container").appendChild(heart);
+    // Ajoute le cœur au conteneur
+    document.getElementById("hearts-container").appendChild(heart);
 
-        setTimeout(() => {
-          heart.remove();
-        }, 4000);
-      }
+    // Retire le cœur après l'animation
+    setTimeout(() => {
+      heart.remove();
+    }, 8000); // Doit être légèrement supérieur à la durée totale de l'animation
+  }
 
-      // Génère un cœur toutes les 300 ms
-      setInterval(createHeart, 300);
-    </script>
+  // Générer un cœur toutes les 300 ms
+  setInterval(createHeart, 300);
+</script>
+
     <div class="fullscreen" id="fullscreen">
       <button id="prev" onclick="prevPhoto()">◀</button>
       <div class="content">
@@ -223,6 +307,8 @@
           }
         }
       </script>
-      
+
+     <script>
+        
   </body>
 </html>
